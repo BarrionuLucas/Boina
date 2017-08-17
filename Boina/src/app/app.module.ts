@@ -10,6 +10,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 import { AngularFireModule , FirebaseAppConfig } from 'angularfire2';
+import { UserService } from "../providers/user.service";
 
 
 
@@ -45,6 +46,8 @@ const firebaseAppConfig: FirebaseAppConfig = {
   providers: [
     StatusBar,
     SplashScreen,
+    UserService,
+    AuthService
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
