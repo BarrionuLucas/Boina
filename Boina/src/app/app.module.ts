@@ -11,6 +11,7 @@ import { HomePage } from '../pages/home/home';
 
 import { AngularFireModule , FirebaseAppConfig } from 'angularfire2';
 import { UserService } from "../providers/user.service";
+import { AuthService } from "../providers/auth.service";
 
 
 
@@ -47,7 +48,7 @@ const firebaseAppConfig: FirebaseAppConfig = {
     StatusBar,
     SplashScreen,
     UserService,
-    AuthService
+    AuthService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
